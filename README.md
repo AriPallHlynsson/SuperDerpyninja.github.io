@@ -1,4 +1,5 @@
-# Verkefni-1.1-HTML-t-g
+# Vefþróun 1
+
 !DOCTYPE HTML>
 <html>
     <head>
