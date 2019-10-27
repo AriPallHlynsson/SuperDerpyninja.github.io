@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" /> 
+<style>
+  * {
+  box-sizing: border-box;
+  font: 400 1em/1.5 sans-serif;
+  margin: 0;
+  background-color:none 
+}
+a {
+  text-decoration:none;
+  font-weight:bold;
+  text-emphasis: black;
+  }
+
+p {
+  text-indent:3em
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+  h2 {
+    font-weight:bold;
+    font-size: 16px;
+  }
+
+.header {
+  background-image: linear-gradient(rgb(0,191,255), blue);
+  grid-area: header;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row;  /* ath*/
+  justify-content: space-around;
+  padding: 30px;
+  height: 140px;;
+  list-style-type: none;
+      }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'nav nav nav nav nav nav'
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  
+} 
+
+.left,
+.right {
+  background-image: linear-gradient(rgb(250,250,210), yellow);
+  
+  padding: 10px;
+  height: 300px; 
+  border: none;
+}
+
+.left {
+    grid-area: left;
+    display: left;
+    grid-template-columns: 1fr 1fr;
+    }
+
+
+.middle {
+  grid-area: middle;
+  text-align: justify;
+  background-color: antiquewhite;
+  border: 1px solid black
+}
+
+.right {
+    text-align: initial;
+    grid-area: right;
+    display: right;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+
+ .footer {
+  background-image: linear-gradient(rgb(135,206,250), blue);
+  grid-area: footer;
+  display: flex;
+  flex-flow: row;  /* ath*/
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
+ 
+  
+}
+
+  span.center {
+  display: block;
+  background-color:rgb(255,255,224);
+  margin: 1em auto;
+  width: 400px;
+  height: 180px;
+  padding: 3px;
+  text-align: left;
+    
+  }
+
+  .column {
+  text-decoration: none;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  
+}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header'
+      'nav nav nav nav nav nav' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="header">
+     <h1>BAKGRUNNSLITIR</h1>
+     <a href="https://www.w3schools.com/css/css3_gradients.asp">Verkefni 4.1</a>   
+     <a href="https://www.w3schools.com/css/css3_gradients.asp">BAKGRUNNUR</a>
+     <a href="same.html">EFNISYFIRLIT</a>
+  </div>
+  
+  
+  <div class="left"><p><h2>Litaskali í bakgrunni</h2></p>
+  </br>
+        Meðfylgjandi verkefninu er .zip skrá með 2 vefsíðum sem þú átt að tengja saman. 
+        Normalize.css stílsíðan fylgir með en aðal stílsíðuna vantar. Þú átt að búa hana 
+        til og tengja við vefsíðurnar. Skipulag síðunnar á að vera svipað því sem sýnt 
+        er hér á vefsíðunni en lita- og leturval er frjálst.
+
+        Þegar skjár er minni en 60em (960px) þá á textinn í vefsíðunni að dragast saman 
+        og vera sýnilegur, prófaðu að nota stílbragðið "max-with".</p>
+    
+      </div>
+  <div class="right">
+      Þetta vefdæmi er að hluta til byggt á verkefnadæmi á vef Shayhowe, 
+      Gradient backrounds en þar sem hann hefur ekki uppfært vefinn notar hvorki flexbox 
+      eða grid lausnir er ekki hægt að fara eftir hans uppsetningu</p>
+    <p><span class="center">Hér er bakgrunnurinn hvítur með 70% gagnsæi (e. transparency).
+            Til að skoða kóðann í vafra þá skaltu opna vafra (Chrome) og smella á ☰ táknið 
+            hægra megin í valslánni og velja "Developers tools" úr fellilistanum.
+            Eða bara smella á takkann F12 á lyklaborðinu, "Inspectorinn" virkar 
+            svipað í Firefox og Chrome</span></p>
+             
+  
+  
+ </div>
+
+ <div class="footer"
+     
+      
+      <div class="row">
+          <div class="column">
+            <h2>DD Listi</h2>
+            <p><dl>
+                <dt>Nafn</dt>
+                <dd>Ari Páll</dd>
+                <dt>Email</dt>
+                <dd>aripall03@gmail.com</dd>
+                <dt>Áfangi og braut</dt>
+                <dd>VEFÞ1VG05AU, Tölvubraut</dd>
+              </dl></p>
+           </div>
+          
+          <div class="column">
+              <h2>Innri tenglar</h2>
+              <ul>
+                    
+                   
+                  
+            
+            <li><a href="verkefni-1/"target="_blank" style="color:black"> Verkefni 1</a></p></li>
+                <li><a href="verkefni-2/Verkafni2.1.html"target="_blank" style="color:black"> verkefni 2</a></p></li>
+                        <li><a href="verkefni-3/index.html"target="_blank" style="color:black">Verkefni 3.1</a></p></li>
+                           <li> <a href="verkefni-3/verkefni-32/Síða2.html"target="_blank" style="color:black">Verkefni-3.2</a></p></li>
+                        </ul>        
+                        </br>
+                  <p>©2019 GJG</p>
+          </div>
+          
+          <div class="column">
+            <h2>Ytri Tenglar</h2>
+            <a href="  https://www.youtube.com/watch?v=HPJKxAhLw5I"target="_blank" style="color:black">Björgum nátúrunni</a></p>
+            <a href="  https://www.youtube.com/watch?v=HPJKxAhLw5I"target="_blank" style="color:black">Björgum nátúrunni</a></p>
+            <a href="  https://www.youtube.com/watch?v=HPJKxAhLw5I"target="_blank" style="color:black">Björgum nátúrunni</a></p>
+            <a href="#top" style="color:black">Fara á upphafsreit</a>
+                       
+            <p></p>
+          </div>
+      
+    </div>
+</div>
+ 
+</body>
+</html>
