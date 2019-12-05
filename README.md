@@ -1,18 +1,2 @@
-# Vefþróun 1
-
-!DOCTYPE HTML>
-<html>
-    <head>
-            <title>AriPH</title>
-            <meta charset=“utf-8" /> 
-        </head>
-        <body>
-            
-                <h1>Ari er að vinna heima</h1>
-                    <h2>ótrúlegt en satt</h2>
-                <h3>ekki gleyma að geyma</h3>
-                <h4>leifur sefur eins og alltaf</h4>
-                <h5>ég kann að ríma</h5>
-                <h6>en ekki að glíma</h6>
-    </body>
-</html>
+Þar sem ég var einn að vinna þetta verkefni hafði ég alveg frjálsar hendur um hvað varð fyrir valinu. Ég valdi leik sem ég hef mjög gaman af að spila og heitir“ Stardew Valley.“ Ég leitaði upplýsinga um hann á netinu. Fann heimasíðu höfundar, leiksins og útgáfufyritækisins sem ég nýtti mér við gerð textans á heimasíðunni.
+Mér fannst líka sagan um það hvernig leikurinn varð til áhugaverð og vildi fróðast meira um það
